@@ -1,0 +1,247 @@
+@font-face {
+    font-family: 'open_sanscondensed_light';
+    src: url('../fonts/opensans-condlight-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-condlight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'eb_garamond12_regular';
+    src: url('../fonts/ebgaramond12-regular-webfont.woff2') format('woff2'),
+         url('../fonts/ebgaramond12-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'eb_garamond_sc12_regular';
+    src: url('../fonts/ebgaramondsc12-regular-webfont.woff2') format('woff2'),
+         url('../fonts/ebgaramondsc12-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url('../fonts/montserrat-light-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+button, a{
+	-webkit-transition: 0.2s ease-in;
+	-moz-transition: 0.2s ease-in;
+	-o-transition: 0.2s ease-in;
+	transition: 0.2s ease-in;
+    text-decoration: none;
+	&:hover{
+		text-decoration: none;
+	}
+}
+a:focus,a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+    outline-offset: 0;
+}
+.btn-primary.focus, .btn-primary:focus, .btn.focus, .btn:focus, .comment-form input.focus[type="submit"], .comment-form input[type="submit"]:focus, .search-form .focus.search-submit, .search-form .search-submit:focus {
+    box-shadow: none;
+}
+body{
+	font-family: 'open_sansregular';
+}
+.wrap.container.no-sidebar{
+    width: 100%;
+    .main{
+        padding-right:0;
+        padding-left:0;
+    }
+}
+.blog .wrap.container.no-sidebar{
+    padding: 30px 0;
+    .main{
+        padding-right:0;
+        padding-left:0;
+    }
+}
+.btn-primary{
+	background-color:$second;
+	border-color:$second;
+	&:hover{
+		background-color:#fff;
+		border-color:#fff;
+		color: $second;
+	}
+}
+.wrap.container.sidebar-side{
+    .main{
+        padding-right:0;
+        padding-left:0;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.6666666667% !important;
+        flex: 0 0 66.6666666667%!important;
+        max-width: 0 0 66.6666666667% !important;
+        @media screen and(max-width:426px){
+            -ms-flex: 0 0 80% !important;
+            flex: 0 0 80% !important;
+            max-width: 80% !important;
+            margin:0 auto;
+        }
+    }
+}
+.frm_style_formidable-style.with_frm_style .frm_submit{
+    button{
+        margin:0;
+        border:0;
+        box-shadow:none;
+        background-color:$second;
+        color: #fff;
+        border-radius:0;
+        min-height: 50px;
+        width: 100%;
+        font-family: 'montserratbold';
+        text-transform: uppercase;
+        -webkit-transition: 0.2s ease-in;
+        -moz-transition: 0.2s ease-in;
+        -o-transition: 0.2s ease-in;
+        transition: 0.2s ease-in;
+        &:hover{
+            background-color:#fff;
+            color:$second;
+        }
+    }
+}
+section.container {
+    width: 100%;
+}
+.inner-contain{
+    .container-fluid{
+        padding:0;
+    }
+    h2, h3{
+        font-family: 'open_sansregular';
+        color: $prime;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    h2{
+        font-family: 'montserratregular';
+        text-transform: uppercase;
+        font-size: 1.5em;
+    }
+    h4{
+        font-family: 'montserratregular';
+        text-transform: uppercase;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    p {
+        margin-top: 0;
+        margin-bottom: 20px;
+        line-height: 22px;
+    }
+    ul{
+        list-style: none;
+        li{
+            position:relative;
+            z-index: 0;
+            padding-left:30px;
+            margin-bottom: 20px;
+            &:before{
+                content:"●";
+                position:absolute;
+                z-index: 1;
+                top:4px;
+                left: 1px;
+                font-size: 10px;
+            }
+        }
+    }
+    a{
+        color:#84a1ae;
+        text-decoration: underline;
+        &:hover{
+            color:$prime;
+        }
+        strong{
+            text-transform: uppercase;
+        }
+    }
+    figure{
+        figcaption{
+            padding: 1em;
+            font-size: 11px;
+            font-weight: bold;
+            line-height: 14px;
+            background-color:#f4f4f4;
+        }
+    }
+    .page-header-mobile{
+        display: none;
+        .inner-mobile-toggle{
+            background-color: $third;
+            font-family: montserratregular;
+            color: #fff;
+            font-size: 13px;
+            padding: .8em 1em;
+            white-space: nowrap;
+            text-transform: uppercase;
+            margin-top: -17px;
+            display: block;
+            margin-bottom: 20px;
+            text-decoration: none;
+        }
+        @media screen and(max-width:768px){
+            display: block;
+        }
+    }
+    .row.row-projects{
+        margin-bottom: 30px;
+        img{
+            @media screen and(max-width:426px){
+                margin-bottom: 5px;
+            }
+        }
+        p{
+            font-size: 12px;
+            line-height: 16px;
+            margin-bottom: 2px;
+            strong{
+                font-size: 13px;
+            }
+        }
+    }
+}

@@ -1,0 +1,404 @@
+section.sub-footer{
+	background-color:$prime;
+	padding: 65px 0 55px;
+	color:#fff;
+	.row{
+    .col-md-10{
+      border-right:2px solid $second;
+    }
+		@media screen and(max-width:425px){
+			text-align: center;
+		}
+	}
+	a{
+		color: #fff;
+		i{
+			padding-right:5px;
+		}
+		&:hover{
+			color: $second;
+		}
+	}
+	.links-social{
+		ul#menu-footer{
+			list-style: none;
+			padding-left:0;
+			li{
+				a{
+					padding:.5em 0;
+				}
+			}
+		}
+	}
+}
+footer{
+	padding:30px 0;
+	color:#bdbbbb;
+	font-size:12px;
+	.col-md-6{
+		@media screen and(max-width:425px){
+			text-align: center !important;
+		}
+	}
+}
+
+#bbDivisionsSection {
+ background:url(../images/data-back.jpg) no-repeat center center / cover;
+ padding: 50px 0;
+}
+#bbDivisionsSection .divisions-container {
+ width:65.83333%;
+ min-height:1px;
+ margin:0 17.08333%;
+}
+@media screen and(max-width:768px){
+ #bbDivisionsSection .divisions-container {
+  width:82.91667%;
+  min-height:1px;
+  margin:0 8.54167%
+ }
+}
+#bbDivisionsSection .division-set {
+ width:100%;
+ height:100%;
+ position:relative;
+ top:0;
+ left:0;
+ z-index:0;
+ @media screen and(max-width:768px){
+ 	display: flex;
+    flex-wrap: wrap;
+ }
+}
+@media screen and(max-width:768px){
+ #bbDivisionsSection .bubble {
+  width:48.49246%;
+  min-height:1px;
+  margin-right:3.01508%;
+  height:3.2em;
+  margin-bottom:3.01508%;
+  background-color:$second;
+  border:0;
+  outline: 0;
+ }
+ #bbDivisionsSection .jhu.bubble {
+  background-color:transparent;
+  border:0;
+  outline: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 6em;
+ }
+ #bbDivisionsSection .bubble.bubble-10,#bbDivisionsSection .bubble.bubble-2,#bbDivisionsSection .bubble.bubble-4,#bbDivisionsSection .bubble.bubble-9,#bbDivisionsSection .bubble.bubble-8 {
+  margin-right:0
+ }
+ #bbDivisionsSection .bubble.bubble-10,#bbDivisionsSection .bubble.bubble-6 {
+  margin-bottom:0
+ }
+}
+#bbDivisionsSection .bubble .text {
+ font-family: 'montserratregular';
+ font-weight:400;
+ color:#FFF;
+ text-align:center;
+ text-transform:uppercase;
+ line-height:1em;
+ display:inline-block;
+ font-size:16px;
+ position:relative;
+ z-index:0;
+ &:before{
+ 	position:absolute;
+ 	z-index: 2;
+ 	background-color:$second;
+ 	width: 4em;
+ 	top:0px;
+ 	left: -5.8em;
+ 	content: "";
+ 	height: 100%;
+ }
+ &:after{
+ 	content: "";
+ 	width: 136%;
+ 	height: 2px;
+ 	background-color:#fff;
+ 	float: right;
+ }
+}
+#bbDivisionsSection .bubble.bubble-3 .text{
+    margin-right: -13em;
+    &:after{
+    	width: 140%;
+    }
+    @media screen and(max-width:768px){
+    	margin:0;
+    	&:before{
+    		display: none;
+    	}
+    	&:after{
+    		display: none;
+    	}
+    }
+}
+#bbDivisionsSection .bubble.bubble-4 .text{
+   margin-left: -14em;
+   &:before{
+   	left: auto;
+   	right: -4.8em;
+   }
+   &:after{
+   	float: left;
+   	width: 115%;
+   }
+    @media screen and(max-width:768px){
+    	margin:0;
+    	&:before{
+    		display: none;
+    	}
+    	&:after{
+    		display: none;
+    	}
+    }
+}
+#bbDivisionsSection .bubble.bubble-6 .text{
+    margin-right: -17em;
+    @media screen and(max-width:768px){
+    	margin:0;
+    	&:before{
+    		display: none;
+    	}
+    	&:after{
+    		display: none;
+    	}
+    } 
+}
+#bbDivisionsSection .bubble.bubble-9 .text{
+    margin-right: -18em;
+    @media screen and(max-width:768px){
+    	margin:0;
+    	&:before{
+    		display: none;
+    	}
+    	&:after{
+    		display: none;
+    	}
+    }
+}
+#bbDivisionsSection .bubble.bubble-10 .text{
+   margin-left: -20em;
+   &:before{
+   	left: auto;
+   	right: -5.1em;
+   }
+   &:after{
+   	float: left;
+   	width: 115%;
+   }
+    @media screen and(max-width:768px){
+    	margin:0;
+    	&:before{
+    		display: none;
+    	}
+    	&:after{
+    		display: none;
+    	}
+    }
+}
+@media only screen and (min-width:54em) {
+#bbDivisionsSection .divisions-container {
+  height:0;
+  padding-bottom:35%;
+  position:relative;
+  z-index:1
+ }
+}
+@media only screen and (min-width:108em) {
+#bbDivisionsSection .divisions-container {
+  width:100%;
+  margin:0
+ }
+}
+@media only screen and (min-width:54em) {
+#bbDivisionsSection .division-set {
+  position:absolute
+ }
+}
+#bbDivisionsSection svg {
+ display:none;
+ width:100%;
+ height:100%;
+ position:relative;
+ z-index:0
+}
+@media only screen and (min-width:54em) {
+#bbDivisionsSection svg {
+  display:block
+ }
+}
+@media only screen and (min-width:54em) {
+#bbDivisionsSection .bubble {
+  width:11em;
+  height:11em;
+  margin:-5.5em 0 0 -5.5em;
+  background-color:#005EB8;
+  border:0;
+  border-radius:100%;
+  position:absolute;
+  z-index:1;
+  font-size:.8em;
+  float:none;
+  overflow:hidden;
+  -webkit-font-smoothing:antialiased!important;
+  -moz-font-smoothing:antialiased!important;
+  -o-font-smoothing:antialiased!important;
+  -ms-font-smoothing:antialiased!important;
+  font-smoothing:antialiased!important;
+  -webkit-backface-visibility:hidden;
+  -moz-backface-visibility:hidden;
+  -o-backface-visibility:hidden;
+  -ms-backface-visibility:hidden;
+  backface-visibility:hidden
+ }
+#bbDivisionsSection .bubble.jhu {
+  border:none;
+  z-index:2;
+  background-color:rgba(113,76,152,.3);
+  display:block;
+  font-size:1.1em;
+  -webkit-transform:scale(1.2);
+  -moz-transform:scale(1.2);
+  -o-transform:scale(1.2);
+  -ms-transform:scale(1.2);
+  transform:scale(1.2);
+  -webkit-transition:transform 1000ms ease-out;
+  -moz-transition:transform 1000ms ease-out;
+  -o-transition:transform 1000ms ease-out;
+  transition:transform 1000ms ease-out;
+  width: 14em;
+  height: 14em;
+  margin: -7em 0 0 -7em;
+  .logo-wrap-jhu{
+	background-color:$second;
+	border-radius: 100%;
+	padding: 28px;
+	border: 30px solid rgba(152, 79, 76,.7); /* rgba for transparency */
+	-moz-background-clip: padding;     /* Firefox 3.6 */
+	-webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
+	background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+  }
+ }
+#bbDivisionsSection .bubble.jhu{
+	padding:40px;
+}
+#bbDivisionsSection .bubble.jhu.shrink {
+  -webkit-transform:scale(1);
+  -moz-transform:scale(1);
+  -o-transform:scale(1);
+  -ms-transform:scale(1);
+  transform:scale(1)
+ }
+#bbDivisionsSection .bubble.jhu .text {
+  position:absolute;
+  top:50%;
+  left:0;
+  z-index:0;
+  -webkit-transform:translateY(-50%);
+  -moz-transform:translateY(-50%);
+  -o-transform:translateY(-50%);
+  -ms-transform:translateY(-50%);
+  transform:translateY(-50%)
+ }
+#bbDivisionsSection .bubble.grow {
+background-color:$second;
+  -webkit-animation-name:bubbleGrow;
+  -moz-animation-name:bubbleGrow;
+  -o-animation-name:bubbleGrow;
+  animation-name:bubbleGrow;
+  -webkit-animation-duration:500ms;
+  -moz-animation-duration:500ms;
+  -o-animation-duration:500ms;
+  animation-duration:500ms;
+  -webkit-animation-direction:alternate;
+  -moz-animation-direction:alternate;
+  -o-animation-direction:alternate;
+  animation-direction:alternate;
+  -webkit-animation-timing-function:ease-in-out;
+  -moz-animation-timing-function:ease-in-out;
+  -o-animation-timing-function:ease-in-out;
+  animation-timing-function:ease-in-out;
+  -webkit-animation-iteration-count:2;
+  -moz-animation-iteration-count:2;
+  -o-animation-iteration-count:2;
+  animation-iteration-count:2;
+  overflow: visible;
+  border: 30px solid rgba(113, 76, 152, 0.3); /* rgba for transparency */
+  -moz-background-clip: padding;     /* Firefox 3.6 */
+  -webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
+  background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+  cursor: pointer;
+ }
+ @-webkit-keyframes bubbleGrow {
+  from {
+   -webkit-transform:scale(1);
+   -moz-transform:scale(1);
+   -o-transform:scale(1);
+   -ms-transform:scale(1);
+   transform:scale(1)
+  }
+  to {
+   -webkit-transform:scale(1.2);
+   -moz-transform:scale(1.2);
+   -o-transform:scale(1.2);
+   -ms-transform:scale(1.2);
+   transform:scale(1.2)
+  }
+ }
+ @-moz-keyframes bubbleGrow {
+  from {
+   -webkit-transform:scale(1);
+   -moz-transform:scale(1);
+   -o-transform:scale(1);
+   -ms-transform:scale(1);
+   transform:scale(1)
+  }
+  to {
+   -webkit-transform:scale(1.2);
+   -moz-transform:scale(1.2);
+   -o-transform:scale(1.2);
+   -ms-transform:scale(1.2);
+   transform:scale(1.2)
+  }
+ }
+ @-o-keyframes bubbleGrow {
+  from {
+   -webkit-transform:scale(1);
+   -moz-transform:scale(1);
+   -o-transform:scale(1);
+   -ms-transform:scale(1);
+   transform:scale(1)
+  }
+  to {
+   -webkit-transform:scale(1.2);
+   -moz-transform:scale(1.2);
+   -o-transform:scale(1.2);
+   -ms-transform:scale(1.2);
+   transform:scale(1.2)
+  }
+ }
+ @keyframes bubbleGrow {
+  from {
+   -webkit-transform:scale(1);
+   -moz-transform:scale(1);
+   -o-transform:scale(1);
+   -ms-transform:scale(1);
+   transform:scale(1)
+  }
+  to {
+   -webkit-transform:scale(1.2);
+   -moz-transform:scale(1.2);
+   -o-transform:scale(1.2);
+   -ms-transform:scale(1.2);
+   transform:scale(1.2)
+  }
+ }
+}
