@@ -35,6 +35,17 @@
             $("main.main").toggleClass("main-shrink");
             $("aside.sidebar").toggleClass("side-toggle");
         });
+         $('.contentt').hide();
+         $('a.read').click(function (e) {
+          $(this).parent('.excerptt').slideToggle(500);
+           $(this).siblings('.whole-post').slideToggle(500);
+           console.log(this);
+         });
+         $('a.read-less').click(function (e) {
+          e.preventDefault();
+             $(this).parent('.contentt').slideUp('fast');
+             $(this).closest('.awsm-content-scrollbar').find('.excerptt').show();
+         });
       }
     },
     // Home page
