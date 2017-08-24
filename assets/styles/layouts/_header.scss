@@ -37,6 +37,7 @@ header{
 					padding: .8em 1em;
 					white-space: nowrap;
 					text-transform: uppercase;
+					display: block;
 					&:hover{
 						background-color:#fff;
 						color: $third;
@@ -102,6 +103,7 @@ header{
 						border: 0;			
     					margin-left: -1px;
     					background:url(../images/search.jpg) no-repeat center center #fff;
+    					display: block;
 					}
 				}
 			}

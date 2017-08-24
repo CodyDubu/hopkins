@@ -21,6 +21,10 @@
 	    -o-transition: all 0.5s ease;
 	    transition: all 0.5s ease;
 	    text-align: right;
+	    @media screen and(max-width:992px){
+	    	width: auto;
+	    	margin-right: -610px;
+	    }
 	    #menu-side-mobile{
 	    	text-align: left;
 	    	padding-left: 0;
@@ -105,6 +109,7 @@
 				border: 0;			
 				margin-left: -1px;
 				background:url(../images/search.jpg) no-repeat center center #fff;
+				display: block;
 			}
 		}
 		.close-btn{

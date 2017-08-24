@@ -676,6 +676,20 @@ section.feeds .tab-content .tab-pane .col-md-4 h3 a:hover{
 .exec-com .awsm-grid-wrapper .awsm-grid h3, .professorship .list-style .awsm-personal-info h3{
 	display:none;
 }
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    /* Safari and Chrome, if Chrome rule needed */
+	.drawer-style.style-1 .awsm-personal-info{
+		width: 48%;
+		width: calc(100% - 1px);
+		width: -webkit-calc(100% - 1px);
+	    width: -moz-calc(100% - 1px);
+	}
+
+    /* Safari 5+ ONLY */
+    ::i-block-chrome, .drawer-style.style-1 .awsm-personal-info {
+     width: 48%;
+    }
+}
 .exec-com .awsm-grid-wrapper .awsm-grid .awsm-personal-info span, .professorship .list-style .awsm-personal-info span{
 	color:$prime;
 	font-size:22px;
@@ -699,6 +713,7 @@ section.feeds .tab-content .tab-pane .col-md-4 h3 a:hover{
     top: 0;
     bottom: 0;
     background: rgba(82, 72, 107, 0.78);
+    border-radius:100%;
 }
 .drawer-style.style-1 .awsm-grid-card.awsm-expanded>a::after{
 	    border-top-color: rgba(82, 72, 107, 0.78);
