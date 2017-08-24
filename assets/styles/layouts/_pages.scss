@@ -608,6 +608,34 @@ section.apply-now{
 		}
 	}
 }
+.main{
+	.shrink-move{
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 80%;
+		flex: 0 0 80%;
+		max-width: 80%;
+		margin:0 auto;
+		-webkit-transition: 0.2s ease-in;
+		-moz-transition: 0.2s ease-in;
+		-o-transition: 0.2s ease-in;
+		transition: 0.2s ease-in;
+		@media screen and(max-width:992px){
+			-webkit-box-flex: 0;
+			-ms-flex: 0 0 100%;
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+	}
+}
+.main-shrink{
+	.shrink-move{
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin:0;
+	}
+}
 section.feeds .tab-content .tab-pane .col-md-4 {
 	border-left: 2px solid rgba(132,161,174,.8) !important;
 }
@@ -637,6 +665,29 @@ section.feeds .tab-content .tab-pane .col-md-4 h3 a:hover{
 }
 .awsm-grid figure, .awsm-grid figure img {
     border-radius: 100%;
+}
+.professorship .awsm-grid figure, .exec-com .awsm-grid figure{
+	border-radius:0;
+}
+.professorship .list-style figcaption p{
+	font-weight:normal;
+	font-family: 'open_sansregular';
+}
+.exec-com .awsm-grid-wrapper .awsm-grid h3, .professorship .list-style .awsm-personal-info h3{
+	display:none;
+}
+.exec-com .awsm-grid-wrapper .awsm-grid .awsm-personal-info span, .professorship .list-style .awsm-personal-info span{
+	color:$prime;
+	font-size:22px;
+	margin: 0 0 5px;
+	line-height: 1.1;
+}
+.inner-contain .professorship figure figcaption{
+	padding:3em;
+}
+.professorship .list-style .awsm-contact-info a{
+	font-family: 'montserratregular';
+	font-weight:bold;
 }
 .drawer-style.style-1>.awsm-grid-card>a::before{
 	border:0;

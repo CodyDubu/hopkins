@@ -1,8 +1,13 @@
+<?php function is_tribe_calendar() { } // detect if we're on an Events Calendar page ?>
 <?php if(is_home()){
 	dynamic_sidebar('sidebar-blog');
 }elseif(is_page(7)){
 
-}elseif(is_page(174) || is_page(188) || is_archive()){
+}elseif(tribe_is_event() || tribe_is_event_category() || tribe_is_in_main_loop() || tribe_is_view() || 'tribe_events' == get_post_type() || is_singular( 'tribe_events' )) { ?>
+<div class="inner-contain">
+<?php dynamic_sidebar('sidebar-blog'); ?>
+</div>
+<?php }elseif(is_page(174) || is_page(188) || is_archive()){
   wp_nav_menu([
    'menu'            => 'top',
    'theme_location'  => 'news_navigation',

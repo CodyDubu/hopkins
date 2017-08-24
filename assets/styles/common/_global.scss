@@ -417,18 +417,18 @@ section.container {
             }
         }
         ul.projects-tax{
-            list-style:none;
-            background-color:$prime;
-            border-radius:4px;
+            list-style:none;     
             color: #fff;
             margin:0;
-            padding:0;
-            padding: 5px 15px;
+            padding:0;     
             display: inline-block;
             li{
-                padding-left:0;
+                padding: 5px 15px;
+                border-radius:4px;
                 display: inline-block;
                 margin-bottom: 0;
+                font-weight: bold;
+                font-family: 'montserratregular';
                 &:before{
                     content:"";
                 }
@@ -440,6 +440,18 @@ section.container {
                 &:after{
                     content: "";
                 }
+            }
+            li.technology-devices{
+                background-color:#06c1c1;
+            }
+            li.data-analytics{
+                background-color:#008000;
+            }
+            li.user-centered-design{
+                background-color:#c7a20a;
+            }
+            li.systems{
+                background-color:#ff6600;
             }
         }
     }

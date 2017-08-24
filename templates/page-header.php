@@ -3,14 +3,14 @@
 <?php }elseif(is_home() || is_category()){ ?>
 <div class="container inner-contain">
 <div class="row">
-<div class="col-md-12">
+<div class="col-md-12 shrink-move">
 <div class="page-header-mobile">
   <a href="#" class="inner-mobile-toggle">Sidebar Menu</a>
 </div>
 <?php }elseif(is_page(238) || is_page(243) || is_page(247) || is_page(245)){ ?>
 <div class="container inner-contain">
 <div class="row fade-in">
-<div class="col-md-12">
+<div class="col-md-12 shrink-move">
 
 <div class="dropdown text-right">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -29,7 +29,7 @@
 <?php }else{ ?>
 <div class="container-fluid inner-contain">
 <div class="row no-gutter">
-<div class="col-md-12">
+<div class="col-md-12 shrink-move">
 <div class="page-header-mobile">
   <a href="#" class="inner-mobile-toggle">Sidebar Menu</a>
 </div>
