@@ -54,18 +54,4 @@ if ($root_parent = get_the_title($grandparent) !== $root_parent = get_the_title(
 	<?php echo FrmFormsController::get_form_shortcode( array( 'id' => 8, 'title' => false, 'description' => false ) ); ?>
 	</div>
 </div>
-<?php }else{ ?>
-<div class="email-wrap">
-	<div class="broch container">
-		<div class="row no-gutters">
-			<div class="col-md-3">
-				<img src="<?php bloginfo('template_url'); ?>/assets/images/logo-purp.png" class="img-fluid" alt="<?php bloginfo('name'); ?>" />
-			</div>
-			<div class="col-md-9">
-				<h3>Want more info?<br> Download our brochure...</h3>
-			</div>
-		</div>
-		<?php echo do_shortcode('[formidable id=5]'); ?>
-	</div>
-</div>
 <?php } ?>

@@ -36,21 +36,39 @@
 						<img src="<?php bloginfo('template_url'); ?>/assets/images/logo.png" class="img-fluid" alt="<?php bloginfo('name'); ?>" />
 					</div>
 				</div>
-				<button class="division bubble button column bubble-3 grow" style="top: 40%; left: 90%;">
-					<span class="text" style="color: rgb(255, 255, 255);">Systems</span>
-				</button>
-				<button class="division bubble button column bubble-4 grow" style="top: 90%; left: 20%;">
-					<span class="text" style="color: rgb(255, 255, 255);">Tech/devices</span>
-				</button>
-				<button class="division bubble button column bubble-6 grow" style="top: 17%; left: 6%;">
-					<span class="text" style="color: rgb(255, 255, 255);">Data analytics</span>
-				</button>
-				<button class="division bubble button column bubble-9 grow" style="top: 78%; left: 76%;">
-					<span class="text" style="color: rgb(255, 255, 255);">Mceh proposals</span>
-				</button>
-				<button class="division bubble button column bubble-10 grow" style="top: 11%; left: 80%;">
-					<span class="text" style="color: rgb(255, 255, 255);">user-centered design</span>
-				</button>
+				<a href="<?= esc_url(home_url('/')); ?>research-innovation/research-areas/">
+					<button class="division bubble button column bubble-3 grow" style="top: 40%; left: 90%;">
+						<span class="text" style="color: rgb(255, 255, 255);">Systems
+						<span class="text-desc">Systems Modeling and Optimization develops models of the complex interactions of patients and caregivers, and produces solutions that transform data into information that provides evidence, reduces time and waste for patients and providers, and informs organizational strategies and policy-making.</span>
+						</span>		
+					</button>
+				</a>
+				<a href="<?= esc_url(home_url('/')); ?>research-innovation/research-areas/">
+					<button class="division bubble button column bubble-4 grow" style="top: 90%; left: 20%;">
+						<span class="text" style="color: rgb(255, 255, 255);">Tech/devices					
+						<span class="text-desc">Medical procedures increasingly rely on a three-way partnership between physicians, information, and teaching to enable accurate and cost-effective diagnosis, treatment, and follow-up for patients. The goal of the Malone Center’s Technology and Devices thrust is to develop and deploy technology and systems to provide the critical interface between the “virtual reality” of information about patients and the “physical reality” of patients and caregivers.</span>
+						</span>
+					</button>
+				</a>
+				<a href="<?= esc_url(home_url('/')); ?>research-innovation/research-areas/">
+					<button class="division bubble button column bubble-6 grow" style="top: 17%; left: 6%;">
+						<span class="text" style="color: rgb(255, 255, 255);">Data analytics
+						<span class="text-desc">Data Analytics will develop and deploy measurement technologies, new methods to structure and mine data, and pioneer new tools for analytics and machine learning to advance decision support, prediction, and process modeling for healthcare.</span>
+						</span>
+					</button>
+				</a>
+				<a href="<?= esc_url(home_url('/')); ?>research-innovation/submit-a-research-idea/">
+					<button class="division bubble button column bubble-9 grow" style="top: 78%; left: 76%;">
+						<span class="text" style="color: rgb(255, 255, 255);">Submit a Research Idea</span>
+					</button>
+				</a>
+				<a href="<?= esc_url(home_url('/')); ?>research-innovation/research-areas/">
+					<button class="division bubble button column bubble-10 grow" style="top: 11%; left: 80%;">
+						<span class="text" style="color: rgb(255, 255, 255);">user-centered design
+						<span class="text-desc">The User-Centered Design thrust applies cutting edge design and evaluation methodologies to create tools that address the needs of end-user while accounting for the unique aspects of the problem space.</span>
+						</span>
+					</button>
+				</a>
 			</div>
 		</div>
 	</div>

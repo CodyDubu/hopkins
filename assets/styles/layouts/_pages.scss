@@ -268,21 +268,16 @@ section.apply-now{
 	    -moz-transition: all 0.5s ease;
 	    -o-transition: all 0.5s ease;
 	    transition: all 0.5s ease;
-	@media screen and(max-width:768px){
 		-webkit-box-flex: 0;
 	    -ms-flex: 0 0 100%;
 	    flex: 0 0 100%;
 	    max-width: 100%;
-	    margin-left: -29px;
-	}
 }
 .sidebar-side .main.main-shrink{
-	@media screen and(max-width:768px){
 	    -webkit-box-flex: 0;
 	    -ms-flex: 0 0 66.6666666667%;
 	    flex: 0 0 66.6666666667%;
 	    max-width: 66.6666666667%;
-	}
 }
 .featured-blog-wrap{
 	align-items:center;
@@ -363,6 +358,24 @@ section.apply-now{
 	}
 	@media screen and(max-width:768px){
 		width: 100%;
+	}
+	.image-hovers{
+		.col-md-6{
+			position:relative;
+			z-index: 0;
+			-webkit-transition: 0.2s ease-in;
+			-moz-transition: 0.2s ease-in;
+			-o-transition: 0.2s ease-in;
+			transition: 0.2s ease-in;
+			&:hover{
+				-webkit-transform:scale(1.2);
+				-moz-transform:scale(1.2);
+				-o-transform:scale(1.2);
+				-ms-transform:scale(1.2);
+				transform:scale(1.2);
+				z-index: 10000;
+			}
+		}
 	}
 	.caption-style-1{
 		list-style-type: none;
@@ -476,9 +489,9 @@ section.apply-now{
 					}
 				}
 				p{
-					font-size: .6em;
+					font-size: 13px;
 					line-height: 1.3em;
-					@media screen and(min-width:1025px){
+					@media screen and(min-width:1023px){
 						font-size: 100%;
 					}
 				}
@@ -608,14 +621,16 @@ section.feeds .tab-content .tab-pane .col-md-4 h3 a:hover{
 	padding:60px 15px 0px;
 	@media screen and(max-width:650px){
 		padding: 60px 0 0;
-		width: auto;
-		overflow: scroll;
+		width: 100%;
 	}
 }
 .drawer-style.style-1 .awsm-personal-contact-info {
 	padding:60px 20px 0px;
 	background-color:#f4f4f4;
 	height: auto;
+	@media screen and(max-width:650px){
+		width: 100%;
+	}
 	.img-fluid{
 		border-radius:100%;
 	}
@@ -730,10 +745,14 @@ section.feeds .tab-content .tab-pane .col-md-4 h3 a:hover{
 }
 .awsm-grid-expanded-content{
 	display:flex;
+	@media screen and(max-width:650px){
+		flex-wrap: wrap;
+	}
 }
 .dropdown.text-right{
 	width:180px;
 	float:right;
+	margin-top: 45px;
 	button.dropdown-toggle{
 		width: 100%;
 		border:0;

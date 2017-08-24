@@ -6,6 +6,7 @@
     transition: all 0.5s ease;
     position:relative;
     z-index: 0;
+    height: 100vh;
 	#sidebar-wrapper {
 	    z-index: 1000;
 	    position: fixed;
@@ -40,6 +41,46 @@
 	    	.active .nav-link{
 	    		color: #94A7C2;
 	    	}
+	    	.dropdown-menu{
+	    		display: block;
+	    		height: 0;
+	    		visibility: hidden;
+	    		z-index: 0;
+	    		opacity: 0;
+	    		-webkit-transition: all .5s cubic-bezier(0.22, 0.61, 0.36, 1);
+			    -moz-transition: all .5s cubic-bezier(0.22, 0.61, 0.36, 1);
+			    -o-transition:all .5s cubic-bezier(0.22, 0.61, 0.36, 1);
+			    transition: all .5s cubic-bezier(0.22, 0.61, 0.36, 1);
+			    background-color:transparent; 
+			    border-radius:0;
+			    border:0;
+			    z-index: 99999;
+			    a.dropdown-item{
+			    	color: #fff;
+			    	&:hover{
+			    		color:$prime;
+			    	}
+			    }
+    		}
+	    	.show > .dropdown-menu {
+	    		margin-top: -20px;
+	    		padding:20px 0;
+	    		height: auto;
+	    		visibility: visible;
+	    		opacity: 1;
+	    		position:relative;
+	    		-webkit-transition: all .5s cubic-bezier(0.22, 0.61, 0.36, 1);
+			    -moz-transition: all .5s cubic-bezier(0.22, 0.61, 0.36, 1);
+			    -o-transition: all .5s cubic-bezier(0.22, 0.61, 0.36, 1);
+			    transition: all .5s cubic-bezier(0.22, 0.61, 0.36, 1);
+			}
+			a.dropdown-item.active, a.dropdown-item:active{
+				background-color:#fff;
+				color: $prime;
+			}
+			.dropdown-backdrop{
+				z-index: 0;
+			}
 	    }
 		.search-form{
 			display: flex;
@@ -89,6 +130,7 @@
 		    -moz-transition: all 0.5s ease;
 		    -o-transition: all 0.5s ease;
 		    transition: all 0.5s ease;
+		    margin-left: -33.3333333333%;
 		    @media screen and(max-width:426px){
 		    	padding-left:10px;
 		    }
@@ -288,15 +330,17 @@
 	    			font-weight: bold;
 	    		}
 	    	}
-	    	@media screen and(max-width:768px){
-	    		margin-left: -33.3333333333%;
-	    	}
 	    	@media screen and(max-width:426px){
 	    		margin-left: -60%;
 	    		margin-right: 20px;
 	    	}
 	    }
 	}
+}
+.sidebar-blog-back{
+	background-color: rgba(132,161,174,.15);
+	padding: 20px 15px 0;
+    margin-top: -1em;
 }
 #wrapper.toggled {
     padding-right: 250px;

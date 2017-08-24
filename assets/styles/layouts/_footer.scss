@@ -69,12 +69,25 @@ footer{
  	display: flex;
     flex-wrap: wrap;
  }
+ a{
+  display: block;
+ }
 }
 @media screen and(max-width:768px){
- #bubbleSection .bubble {
+ #bubbleSection a{
   width:48.49246%;
   min-height:1px;
-  margin-right:3.01508%;
+  margin-right:1%;
+  height:3.2em;
+  margin-bottom:3.01508%;
+  background-color:$second;
+  border:0;
+  outline: 0;
+ }
+#bubbleSection .bubble {
+  width:100%;
+  min-height:1px;
+  margin-right:1%;
   height:3.2em;
   margin-bottom:3.01508%;
   background-color:$second;
@@ -125,6 +138,75 @@ footer{
  	float: right;
  }
 }
+.text-desc{
+    position: absolute;
+    z-index: 20000000000;
+    width: 350px;
+    top: 31px;
+    text-transform: none;
+    font-size:13px;
+    background-color: #4b296f;
+    padding:10px 25px;
+    display: block;
+    opacity: 0;
+    font-family: 'open_sansregular';
+    height: 0;
+    @media screen and(max-width:768px){
+      display: none;
+    }
+}
+#bubbleSection .bubble.bubble-3{
+  z-index: 10;
+  .text-desc{
+    left: -100%;
+    margin-left: -25px;
+    text-align: right;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+  }
+}
+#bubbleSection .bubble.bubble-4{
+  z-index: 10;
+  .text-desc{
+    right: 0;
+    margin-right: -55px;
+    text-align: left;
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -o-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+  }
+}
+#bubbleSection .bubble.bubble-6{
+  z-index: 10;
+  .text-desc{
+    left: 0;
+    margin-left: -35px;
+    text-align: right;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+  }
+}
+#bubbleSection .bubble.bubble-10{
+  z-index: 11;
+  .text-desc{
+    left: 100%;
+    margin-left: -35px;
+    text-align: left;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+  }
+}
 #bubbleSection .bubble.bubble-3 .text{
     margin-right: -13em;
     &:after{
@@ -173,7 +255,7 @@ footer{
     } 
 }
 #bubbleSection .bubble.bubble-9 .text{
-    margin-right: -18em;
+    margin-right: -22em;
     @media screen and(max-width:768px){
     	margin:0;
     	&:before{
@@ -310,14 +392,14 @@ footer{
  }
 #bubbleSection .bubble.grow {
 background-color:$second;
-  -webkit-animation-name:bubbleGrow;
-  -moz-animation-name:bubbleGrow;
-  -o-animation-name:bubbleGrow;
-  animation-name:bubbleGrow;
-  -webkit-animation-duration:500ms;
-  -moz-animation-duration:500ms;
-  -o-animation-duration:500ms;
-  animation-duration:500ms;
+  -webkit-animation-name:fadeBorder;
+  -moz-animation-name:fadeBorder;
+  -o-animation-name:fadeBorder;
+  animation-name:fadeBorder;
+  -webkit-animation-duration:1.5s;
+  -moz-animation-duration:1.5s;
+  -o-animation-duration:1.5s;
+  animation-duration:1.5s;
   -webkit-animation-direction:alternate;
   -moz-animation-direction:alternate;
   -o-animation-direction:alternate;
@@ -326,16 +408,50 @@ background-color:$second;
   -moz-animation-timing-function:ease-in-out;
   -o-animation-timing-function:ease-in-out;
   animation-timing-function:ease-in-out;
-  -webkit-animation-iteration-count:2;
-  -moz-animation-iteration-count:2;
-  -o-animation-iteration-count:2;
-  animation-iteration-count:2;
+  -webkit-animation-iteration-count:infinite;
+  -moz-animation-iteration-count:infinite;
+  -o-animation-iteration-count:infinite;
+  animation-iteration-count:infinite;
   overflow: visible;
   border: 30px solid rgba(113, 76, 152, 0.3); /* rgba for transparency */
   -moz-background-clip: padding;     /* Firefox 3.6 */
   -webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
   background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
   cursor: pointer;
+  &:hover{
+   -webkit-transform:scale(1.2);
+   -moz-transform:scale(1.2);
+   -o-transform:scale(1.2);
+   -ms-transform:scale(1.2);
+   transform:scale(1.2);
+   .text-desc{
+    opacity: 1;
+    -webkit-animation-name:fadeInO;
+    -moz-animation-name:fadeInO;
+    -o-animation-name:fadeInO;
+    animation-name:fadeInO;
+    -webkit-animation-duration:.5s;
+    -moz-animation-duration:.5s;
+    -o-animation-duration:.5s;
+    animation-duration:.5s;
+    -webkit-animation-direction:alternate;
+    -moz-animation-direction:alternate;
+    -o-animation-direction:alternate;
+    animation-direction:alternate;
+    -webkit-animation-timing-function:ease-in-out;
+    -moz-animation-timing-function:ease-in-out;
+    -o-animation-timing-function:ease-in-out;
+    animation-timing-function:ease-in-out;
+    -webkit-animation-iteration-count:1;
+    -moz-animation-iteration-count:1;
+    -o-animation-iteration-count:1;
+    animation-iteration-count:1;
+    height: auto;
+   }
+  }
+  &:focus{
+    outline: 0;
+  }
  }
  @-webkit-keyframes bubbleGrow {
   from {
@@ -343,7 +459,7 @@ background-color:$second;
    -moz-transform:scale(1);
    -o-transform:scale(1);
    -ms-transform:scale(1);
-   transform:scale(1)
+   transform:scale(1);
   }
   to {
    -webkit-transform:scale(1.2);
@@ -399,6 +515,38 @@ background-color:$second;
    -o-transform:scale(1.2);
    -ms-transform:scale(1.2);
    transform:scale(1.2)
+  }
+ }
+  @-webkit-keyframes fadeBorder {
+  from {
+    border: 30px solid rgba(113, 76, 152, 0.3); /* rgba for transparency */
+  }
+  to {
+    border: 30px solid rgba(113, 76, 152, 0.1); /* rgba for transparency */
+  }
+ }
+ @-moz-keyframes fadeBorder {
+  from {
+    border: 30px solid rgba(113, 76, 152, 0.3); /* rgba for transparency */
+  }
+  to {
+    border: 30px solid rgba(113, 76, 152, 0.1); /* rgba for transparency */
+  }
+ }
+ @-o-keyframes fadeBorder {
+  from {
+    border: 30px solid rgba(113, 76, 152, 0.3); /* rgba for transparency */
+  }
+  to {
+    border: 30px solid rgba(113, 76, 152, 0.1); /* rgba for transparency */
+  }
+ }
+ @keyframes fadeBorder {
+  from {
+    border: 30px solid rgba(113, 76, 152, 0.3); /* rgba for transparency */
+  }
+  to {
+    border: 30px solid rgba(113, 76, 152, 0.1); /* rgba for transparency */
   }
  }
 }

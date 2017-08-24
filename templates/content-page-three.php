@@ -15,7 +15,7 @@
 <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
 <?php } ?>
 </div>
-<div class="col-md-4">
+<div class="col-md-4 sidebar-blog-back">
 <?php dynamic_sidebar('sidebar-blog'); ?>
 </div>
 </div>
