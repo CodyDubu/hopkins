@@ -1,3 +1,207 @@
+.single{
+	.sym-wrap{
+		.page-content-wrapper-inner{		
+			header.banner{
+				position:absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				min-height: 85px;
+				.menu-bar{
+					background-color: transparent;
+					.row{
+						min-height: 100px;
+						.menu-cnt{
+							display: flex;
+							align-items:center;
+							.register{
+								min-width: 150px;
+								display:block;
+								background: $second;
+								text-align: center;
+								color:#fff;
+								text-transform: uppercase;
+								border-radius:20px;
+								padding: 7px 0;
+    							font-weight: bold;
+    							font-size: 14px;
+    							font-family: montserratregular;
+    							&:hover{
+    								background:rgba(224, 87, 81, 0.66);
+    							}
+							}
+						}
+						.text-right.menu-cnt{
+							justify-content: flex-end;
+						}
+					}
+				}
+				.menu-bar .container-fluid .navbar{
+					justify-content: flex-start;
+					padding:0;
+					#menu-toggle{
+						font-size: 20px;
+					}
+				}
+				.menu-bar .container-fluid .brand{
+					display: flex;
+					justify-content: center;
+					height: 85px;
+					margin:15px 0;
+					img{
+						width: auto;
+						height: 85px;
+					}
+				}
+			}
+			.wrap.sidebar-side{
+				position:relative;
+				z-index: 1;
+			}
+			article{
+				margin:0;
+			}
+			.meetup-entry-header .meetup-cover-wrap .meetup-event-header{
+				margin-top:140px;
+				position:relative;
+			}
+			.meetup-content-wrap {
+				margin-bottom: -13px;
+				.meetup-col-right{
+					float: none;
+					width: auto;
+					border:0;
+					padding:0;
+					ul{
+						margin-bottom: 0;
+					}
+					.meetup-add-to-calendar{
+						font-family: montserratregular;
+						color: #fff;
+						text-transform: uppercase;
+					}
+				}
+			}
+			.meetup-about{
+				background:url(../images/sym-about-back.jpg) no-repeat center center;
+				padding: 97px 0;
+				position:static;
+				h2{
+					font-family: 'open_sansregular';
+					color: #005eb8;
+				}
+			}
+			.meetup-info{
+				background:url(../images/sym-about-back-2.jpg) no-repeat center center / cover;
+				padding:100px 0;
+				color: #fff;
+				.info-date{
+					font-size: 1.7em;
+				    font-style: italic;
+				    color: #41a2ff;
+				}
+				h3{
+					font-family: 'open_sansregular';
+					font-weight: bold;
+				}
+			}
+			.pop-over{
+				position:relative;
+				top: 0;
+				left: 0;
+				z-index: 5;
+			}
+			.meetup-entry-header .meetup-cover-wrap{
+				min-height: 450px;
+				height: auto;
+			}
+			.meetup-entry-header .meetup-cover-wrap .meetup-event-header .meetup-title{
+				float: none;
+				width: auto;
+				padding-top:0;
+				margin-left: 40px;
+				width: 50%;
+				h1{
+					font-size: 3em;
+					line-height: 1em;
+				}
+				h2{
+					font-size:1.7em;
+					font-style: italic;
+					color: #41a2ff;
+				}
+				h3{
+					font-size: 1em;
+				}
+			}
+			.meetup-calendar-provider{
+				li{
+					a{
+						color:#fff;
+					}
+				}
+			}
+			.meetup-join-event{
+				display: none;
+				position:absolute;
+				z-index: 999999;
+				width:100%;
+				top: 25px;
+				left:0;
+				background:#fff;
+			}
+			.meetup-entry-header .meetup-nav-wrap{
+				border:0;
+				background:transparent;
+				margin-top: -47px;
+				.meetup-nav{
+					float: none;
+					margin: 0 auto;
+					width: 90%;
+					.meetup-navigation{
+						display: flex;
+						background:#fff;
+						padding-right:0;
+						li{
+							flex-grow:1;
+							border:0;
+							text-align: center;
+							a{
+								font-family: montserratregular;
+								text-transform: uppercase;
+								color:#060958;
+							}
+						}
+					}
+				}
+			}
+			.meetup-listing{
+				.row{
+					position:relative;
+					z-index: 0;				
+					.meetup-indv{				
+						.meetup-caption{
+							display: none;
+							position:relative;
+							left:0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.anchor-wrap{
+	position:relative;
+}
+a.move-down-symp{
+	font-family: montserratregular;
+	color: #41a2ff;
+	text-transform:uppercase;
+	&:hover{
+		color: #060958;
+	}
+}
 #timeline {
 	display:flex;
 	width: 100%;

@@ -14,7 +14,7 @@ use Roots\Sage\Wrapper;
         <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'sage'); ?>
       </div>
     <![endif]-->
-    <div id="wrapper">
+    <div id="wrapper" class="sym-wrap">
       <div id="sidebar-wrapper">
       <div class="container">
       <button class="close-btn"><i class="fa fa-window-close-o" aria-hidden="true"></i></button>
@@ -39,7 +39,7 @@ use Roots\Sage\Wrapper;
         <?php
           }
           do_action('get_header');
-          get_template_part('templates/header');
+          get_template_part('templates/header-meetup');
         ?>
         <?php if (Setup\display_sidebar()) : ?>
         <div class="wrap sidebar-side" role="document">

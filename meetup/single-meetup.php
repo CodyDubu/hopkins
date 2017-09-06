@@ -38,7 +38,6 @@
 				<?php meetup_get_template_part( 'meetup', $speaker ); ?>
 				<hr>
 				<?php meetup_get_template_part( 'meetup', $schedule ); ?>
-				?>
 
 			<?php endwhile; // end of the loop. ?>
 
