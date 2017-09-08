@@ -8,7 +8,7 @@
             $speakers = get_post_meta( get_the_id(), 'speakers' );
             $shortcode       = get_post_meta( $post_id, 'shortcode', true );
 
-            if ( $speakers ) {
+            if ( $shortcode ) {
                 ?>
 
                 <div class="meetup-listing container">

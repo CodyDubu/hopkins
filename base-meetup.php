@@ -16,12 +16,17 @@ use Roots\Sage\Wrapper;
     <![endif]-->
     <div id="wrapper" class="sym-wrap">
             <div class="meetup-navigation-fixed">
+            <div class="meetup-navigation-fixed-wrap">
             <a href="#" id="menu-toggle-two"><i class="fa fa-bars" aria-hidden="true" ></i> Menu</a>
             <a href="#presenter">Presenters</a>
             <a href="#program">Program</a>
-            <a href="#pastSym">Past Symposiums</a>
-            <a href="#meetupDirection">Directions &amp; Contact</a>
+            <a class="brand text-center" href="#wrapper">
+              <img src="<?php bloginfo('template_url'); ?>/assets/images/logo-purp.png" class="img-fluid" alt="<?php bloginfo('name'); ?>" />
+            </a>
+            <a href="#pastSym">Symposiums</a>
+            <a href="#meetupDirection">Contact</a>
             <a class="register" href="#">Register Now <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
             </div>
       <div id="sidebar-wrapper">
       <div class="container">
@@ -40,7 +45,7 @@ use Roots\Sage\Wrapper;
         ?>
         </div>
       </div>
-      <div id="page-content-wrapper" class="page-content-wrapper-inner fade-all">
+      <div id="page-content-wrapper" class="page-content-wrapper-inner">
         <?php
           do_action('get_header');
           get_template_part('templates/header-meetup');
