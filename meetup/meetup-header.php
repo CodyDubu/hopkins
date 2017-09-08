@@ -123,9 +123,10 @@ if ( date( 'dmY', $from ) !== date( 'dmY', $to ) ) {
         <div class="meetup-nav">
             <ul class="meetup-navigation">
             <li><a href="#presenter">Presenters</a></li>
-            <li><a href="#">Program</a></li>
-            <li><a href="#">Past Symposiums</a></li>
-            <li><a href="#">Directions &amp; Contact</a></li>
+            <li><a href="#program">Program</a></li>
+            <li><a href="#pastSym">Past Symposiums</a></li>
+            <li><a href="#meetupDirection">Directions &amp; Contact</a></li>
+            </ul>
         </div><!-- .meetup-nav -->
 
         <?php

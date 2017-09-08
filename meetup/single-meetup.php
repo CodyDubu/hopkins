@@ -18,11 +18,10 @@
 				$part = 'content';
 				$speaker = 'speakers';
 				$schedule = 'schedule';
+				$sponser = 'sponsors';
 
 				if ( meetup_is_sponsor_page() ) {
-					$part = 'sponsors';
 
-				} elseif ( meetup_is_attendies_page() ) {
 					$part = 'attendies';
 
 				} elseif ( meetup_is_gallery_page() ) {
@@ -31,13 +30,13 @@
 
 				$part = apply_filters( 'meetup_single_template_part', $part );
 				$speaker = apply_filters( 'meetup_single_template_part', $speaker );
-				$schedule= apply_filters( 'meetup_single_template_part', $schedule ); ?>
+				$schedule= apply_filters( 'meetup_single_template_part', $schedule );
+				$sponser= apply_filters( 'meetup_single_template_part', $sponser ); ?>
 
 				<?php meetup_get_template_part( 'meetup', $part ); ?>
-				<hr>
 				<?php meetup_get_template_part( 'meetup', $speaker ); ?>
-				<hr>
 				<?php meetup_get_template_part( 'meetup', $schedule ); ?>
+				<?php meetup_get_template_part( 'meetup', $sponser ); ?>
 
 			<?php endwhile; // end of the loop. ?>
 

@@ -13,6 +13,7 @@
 
                 <div class="meetup-listing container">
                 <div class="row">
+                <div class="text-center"><h2 class="block-back">Presenters</h2></div>
                 <?php echo do_shortcode( $shortcode); ?>
                 </div>
 

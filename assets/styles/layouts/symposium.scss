@@ -93,7 +93,7 @@
 			}
 			.meetup-info{
 				background:url(../images/sym-about-back-2.jpg) no-repeat center center / cover;
-				padding:100px 0;
+				padding:8em 0;
 				color: #fff;
 				.info-date{
 					font-size: 1.7em;
@@ -175,21 +175,196 @@
 					}
 				}
 			}
-			.meetup-listing{
-				.row{
-					position:relative;
-					z-index: 0;				
-					.meetup-indv{				
-						.meetup-caption{
-							display: none;
-							position:relative;
-							left:0;
+			#presenter{
+				background:url(../images/presenter-back.jpg) no-repeat center center / cover;
+				.meetup-listing{
+					.row{
+						position:relative;
+						z-index: 0;				
+						.meetup-indv{				
+							.meetup-caption{
+								display: none;
+								position:relative;
+								left:0;
+							}
+						}
+						.drawer-style.style-1>.awsm-grid-card{
+							width:16%;
+						}
+						.awsm-grid-expanded-content{
+							background:#fff;
+						}
+						.drawer-style.style-1 .awsm-details{
+							background:#fff;
+							padding: 30px 15px 0;
+							h2{
+								font-family: 'montserratregular';
+								color: #005eb8;							
+    							margin-bottom: 10px;
+							}
+							p{
+								line-height: 1.5;
+    							color: #333;
+							}
+						}
+						.drawer-style.style-1 .awsm-personal-contact-info{
+							img{
+								margin-bottom:20px;
+							}
+						}
+						.awsm-grid-wrapper .awsm-grid a{
+							h3{
+								color: #fff;
+								text-transform: none;
+								font-family: 'eb_garamond12_regular';
+								font-size: 16px;
+    							white-space: nowrap;
+							}
+							figcaption{
+								display: none;
+							}
+							figure img{
+								border:10px solid #005eb8;
+							}
+						}
+						.text-center{
+							width: 100%;
+							margin: 4em 0 0;
 						}
 					}
 				}
 			}
+			#program{
+				background-color:#061458;
+				color: #fff;
+				.block-back{
+					margin:40px 0;
+				}
+			}
+			#posters{
+				padding:100px 0;
+				.col-md-1, .col-md-11{
+					border-bottom:1px solid #e6e6e6;
+					padding-bottom: 5px;
+					margin-top: 15px;
+				}
+				.fa.fa-arrow-circle-right{
+					font-size:2.5em;
+					color: #e7e7e7;
+				}
+				h2{
+					font-family: 'open_sansregular';
+					text-align: center;
+					color: #061458;
+					font-size: 3em;
+					font-weight: normal;
+					margin-bottom: 50px;
+				}
+				h4{
+					color: #40a2ff;
+					font-size: 17px;
+					margin-bottom: 3px;
+					font-weight: bold;
+					width: 90%;
+				}
+				h5{
+					font-size:15px;
+					width: 90%;
+				}
+			}
 		}
 	}
+}
+
+.previous-symposium{
+	background:url(../images/2016.jpg) no-repeat center center / cover;
+	min-height:340px;
+	.row{
+		min-height: 340px;
+		align-items:center;
+		h2{
+			color: #fff;
+			font-family: 'open_sansregular';
+			font-size: 3em;
+			text-transform: uppercase;
+		}
+	}
+	a.past-sym{
+		width: 200px;
+	    display: block;
+	    background: #41a2ff;
+	    text-align: center;
+	    color: #fff;
+	    text-transform: uppercase;
+	    border-radius: 20px;
+	    padding: 7px 0;
+	    font-weight: 700;
+	    font-size: 14px;
+	    font-family: montserratregular;
+	    margin: 0 auto;
+	    &:hover{
+	    	background:#fff;
+	    	color: #41a2ff;
+	    }
+	}
+}
+.meetup-navigation-fixed{
+	display: none;
+	background:#fff;
+	padding-right:0;
+	position:fixed;
+	z-index:80;
+	width:100%;
+	min-height:65px;
+	transform: translateZ(0);
+	-moz-transform: translatez(0);
+	-ms-transform: translatez(0);
+	-o-transform: translatez(0);
+	-webkit-transform: translateZ(0);
+	-webkit-font-smoothing: antialiased; /* seems to do the same in Safari Family of Browsers*/
+	a{
+		font-family: montserratregular;
+		text-transform: uppercase;
+		color:#060958;
+	}
+}
+#meetupDirection{
+    background: url(../images/sym-about-back.jpg) no-repeat 50%;
+    padding: 165px 0;
+    position: static;	
+    em{
+    	font-size: 1.2em;
+    }
+    address{
+    	font-size: 1.7em;
+    }
+    .map-link{
+    	font-family: 'montserratregular';
+    	text-transform: uppercase;
+    }
+}
+#meetupDirectionTwo{
+	background:url(../images/map-back-meetup.jpg) no-repeat center center / cover;	
+	padding: 165px 0;
+	a{
+		display: flex;
+		color:#fff;
+		i{
+			flex-grow:1;
+			font-size: 4em;
+    		margin-right: 10px;
+    		color: #005eb8;
+		}
+		span{
+			flex-grow:2;
+			font-size: 20px;
+			font-weight: bold;
+		}
+	}
+}
+.single-meetup footer{
+	background:#14141d;
+	color:#8f8f98;
 }
 .anchor-wrap{
 	position:relative;
@@ -198,6 +373,7 @@ a.move-down-symp{
 	font-family: montserratregular;
 	color: #41a2ff;
 	text-transform:uppercase;
+	margin-top:20px;
 	&:hover{
 		color: #060958;
 	}
@@ -205,37 +381,62 @@ a.move-down-symp{
 #timeline {
 	display:flex;
 	width: 100%;
-	height: 350px;
+	height: 500px;
 	overflow: hidden;
-	margin: 50px auto;
+	margin: 0 auto;
 	position: relative;
+	padding-top:0;
 	z-index: 0;
 }
+.dates-back{
+	background: url('../images/timline-back.jpg') 0 center no-repeat;
+	position:relative;
+	z-index:0;
+	height:400px;
+	overflow:hidden;
+}
 #dates {
-	overflow: hidden;
+	padding-left:0;
 	li {
 		list-style: none;
-		width: 100px;
 		height: 50px;
 		font-size: 24px;
 		text-align: center;
 		background: url('../images/biggerdot.png') center bottom no-repeat;
 	}
 	a {
-		display: flex;
+		display: block;
 		line-height: 38px;
 		padding-bottom: 10px;
+		color: #fff;
+		margin:10px 0;
+		opacity: .8;
+		font-size: 18px;
+		font-family: serif;
+		.date-time{
+			width: 18%;
+    		white-space: nowrap;
+    		display: inline-block;
+		}
+		.date-agenda{
+			margin-left: 10px;
+			width: 74%;
+			float: right;
+			line-height: 20px;
+		}
 	}
 	.selected {
-	    font-size: 38px;
+	    font-weight:bold;
+	    opacity: 1;
+	    font-size: 20px;
 	}
 }
 
 #issues {
 	overflow: hidden;
 	li {
-		width: 800px;
-		height: 350px;
+		width: 100%;
+		height: 500px;
 		list-style: none;
 		float: left;
 		p {
@@ -277,6 +478,23 @@ a.move-down-symp{
 		margin: 20px 0;
 		text-shadow: #000 1px 1px 2px;
 	}
+	li{
+		h2{
+			font-size: 1.7em;
+		}
+		h4{
+			color:#40a2ff;
+		}
+		h3{
+			margin-top: 15px;
+			color: #40a2ff;
+			font-size: 1em;
+			font-style: italic;
+		}
+		p{
+			margin-bottom: 0;
+		}
+	}
 }	
 
 
@@ -299,27 +517,41 @@ a.move-down-symp{
 #next,
 #prev {
 	position: absolute;
-	top: 0;
-	font-size: 70px;
-	top: 170px;
-	width: 22px;
-	height: 38px;
+	left: 0;
+	font-size: 31px;
+	width: 100%;
+	height: auto;
 	background-position: 0 0;
 	background-repeat: no-repeat;
-	text-indent: -9999px;
-	overflow: hidden;
+	z-index:2;
+	padding-left: 21%;
+	color:#fff;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#061458+0,7db9e8+100&1+0,0+100 */
+background: -moz-linear-gradient(bottom,  rgba(6,20,88,1) 0%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(bottom,  rgba(6,20,88,1) 0%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to top,  rgba(6,20,88,1) 0%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#061458', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+
+
+	&:hover{
+		opacity: .6;
+	}
 }
 #next:hover,
 #prev:hover {
 	
 }
 #next {
-	right: 0;
-	background-image: url('../images/next.png');
+	bottom: 0;
 }
 #prev {
-	left: 0;
-	background-image: url('../images/prev.png');
+	top: 0;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#061458+0,7db9e8+100&1+0,0+100 */
+background: -moz-linear-gradient(top,  rgba(6,20,88,1) 0%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(6,20,88,1) 0%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(6,20,88,1) 0%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#061458', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+
 }
 #next.disabled,
 #prev.disabled {

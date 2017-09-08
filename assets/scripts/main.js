@@ -156,7 +156,7 @@
             // set positions!
             if(settings.orientation === 'vertical') {
               $(settings.issuesDiv).height(heightIssue*howManyIssues);
-              $(settings.datesDiv).height(heightDate*howManyDates).css('marginTop',heightContainer/2-heightDate/2);
+              $(settings.datesDiv).height(heightDate*howManyDates+50).css('marginTop',heightContainer/2-heightDate/2);
               var defaultPositionDates = parseInt($(settings.datesDiv).css('marginTop').substring(0,$(settings.datesDiv).css('marginTop').indexOf('px')));
             }
 
@@ -175,24 +175,24 @@
                 $(settings.prevButton+','+settings.nextButton).fadeOut('fast');
               } else if(howManyDates === 2) {
                 if($(settings.issuesDiv+' li:first-child').hasClass(settings.issuesSelectedClass)) {
-                  $(settings.prevButton).fadeOut('fast');
-                  $(settings.nextButton).fadeIn('fast');
+                  $(settings.prevButton).css("cursor", "not-allowed");
+                  $(settings.nextButton).css("cursor", "pointer");
                 }
                 else if($(settings.issuesDiv+' li:last-child').hasClass(settings.issuesSelectedClass)) {
-                  $(settings.nextButton).fadeOut('fast');
-                  $(settings.prevButton).fadeIn('fast');
+                  $(settings.nextButton).css("cursor", "not-allowed");
+                  $(settings.prevButton).css("cursor", "pointer");
                 }
               } else {
                 if( $(settings.issuesDiv+' li:first-child').hasClass(settings.issuesSelectedClass) ) {
-                  $(settings.nextButton).fadeIn('fast');
-                  $(settings.prevButton).fadeOut('fast');
+                  $(settings.nextButton).css("cursor", "pointer");
+                  $(settings.prevButton).css("cursor", "not-allowed");
                 }
                 else if( $(settings.issuesDiv+' li:last-child').hasClass(settings.issuesSelectedClass) ) {
-                  $(settings.prevButton).fadeIn('fast');
-                  $(settings.nextButton).fadeOut('fast');
+                  $(settings.prevButton).css("cursor", "pointer");
+                  $(settings.nextButton).css("cursor", "not-allowed");
                 }
                 else {
-                  $(settings.nextButton+','+settings.prevButton).fadeIn('slow');
+                  $(settings.nextButton+','+settings.prevButton).css("cursor", "pointer");
                 }
               }
               // now moving the dates
@@ -365,7 +365,22 @@
               }
             }
           });
-
+          $(window).bind('scroll', function () {
+              if ($(window).scrollTop() > 450) {
+                  $('.meetup-navigation').fadeOut('fast');
+                  $('.meetup-navigation-fixed').fadeIn('fast');
+                  $('.meetup-nav').css('width', '100%');
+                  
+              } else {
+                  $('.meetup-navigation').fadeIn('fast');
+                  $('.meetup-navigation-fixed').fadeOut('fast');
+                  $('.meetup-nav').css('width', '90%');
+              }
+          });
+          $("#menu-toggle-two").click(function(e) {
+              e.preventDefault();
+              $("#wrapper").toggleClass("toggled");
+          });
       }
     }
   };

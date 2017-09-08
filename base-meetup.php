@@ -8,13 +8,21 @@ use Roots\Sage\Wrapper;
 <!doctype html>
 <html <?php language_attributes(); ?>>
   <?php get_template_part('templates/head'); ?>
-  <body <?php body_class('fade-all'); ?>>
+  <body <?php body_class(); ?>>
     <!--[if IE]>
       <div class="alert alert-warning">
         <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'sage'); ?>
       </div>
     <![endif]-->
     <div id="wrapper" class="sym-wrap">
+            <div class="meetup-navigation-fixed">
+            <a href="#" id="menu-toggle-two"><i class="fa fa-bars" aria-hidden="true" ></i> Menu</a>
+            <a href="#presenter">Presenters</a>
+            <a href="#program">Program</a>
+            <a href="#pastSym">Past Symposiums</a>
+            <a href="#meetupDirection">Directions &amp; Contact</a>
+            <a class="register" href="#">Register Now <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
       <div id="sidebar-wrapper">
       <div class="container">
       <button class="close-btn"><i class="fa fa-window-close-o" aria-hidden="true"></i></button>
@@ -32,12 +40,8 @@ use Roots\Sage\Wrapper;
         ?>
         </div>
       </div>
-      <?php if(is_front_page()){ ?>
-      <div id="page-content-wrapper">
-        <?php }else{ ?>
-      <div id="page-content-wrapper" class="page-content-wrapper-inner">
+      <div id="page-content-wrapper" class="page-content-wrapper-inner fade-all">
         <?php
-          }
           do_action('get_header');
           get_template_part('templates/header-meetup');
         ?>
@@ -63,7 +67,7 @@ use Roots\Sage\Wrapper;
         </div><!-- /.wrap -->
         <?php
           do_action('get_footer');
-          get_template_part('templates/footer');
+          get_template_part('templates/footer-meetup');
           wp_footer();
         ?>
         </div>
