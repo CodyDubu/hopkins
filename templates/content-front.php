@@ -101,7 +101,15 @@
 			<div class="row">
 				<?php while($catquery->have_posts()) : $catquery->the_post(); ?>
 					<div class="col-md-4">
-					<?php echo get_the_post_thumbnail( $_post->ID, 'full', array( 'class' => 'img-fluid' )); ?>
+					<div class="thumb">
+				        <?php if ( get_the_post_thumbnail($_post->ID) != '' ) { ?>
+					        <a href="<?php the_permalink() ?>">
+								<?php echo get_the_post_thumbnail( $_post->ID, 'full', array( 'class' => 'img-fluid' )); ?>
+							</a>
+						 <?php } else { ?>
+				        	<a href="<?php the_permalink(); ?>"> <?php echo '<img src="' . catch_that_image() . '" class="img-fluid" />' ?> </a>
+				        <?php } ?>
+				    </div>
 					<h3><a href="<?php the_permalink() ?>" rel="bookmark"><span><?php the_title(); ?></span></a></h3>
 					<p><?php the_author(); ?> | <em><?php echo get_post_meta(get_the_ID(), 'Publication', true); ?></em></p>
 					</div>
@@ -116,7 +124,15 @@
 			<div class="row">
 				<?php while($catquery->have_posts()) : $catquery->the_post(); ?>
 					<div class="col-md-4">
-					<?php echo get_the_post_thumbnail( $_post->ID, 'full', array( 'class' => 'img-fluid' )); ?>
+					<div class="thumb">
+				        <?php if ( get_the_post_thumbnail($_post->ID) != '' ) { ?>
+					        <a href="<?php the_permalink() ?>">
+								<?php echo get_the_post_thumbnail( $_post->ID, 'full', array( 'class' => 'img-fluid' )); ?>
+							</a>
+						 <?php } else { ?>
+				        	<a href="<?php the_permalink(); ?>"> <?php echo '<img src="' . catch_that_image() . '" class="img-fluid" />' ?> </a>
+				        <?php } ?>
+				    </div>
 					<h3><a href="<?php the_permalink() ?>" rel="bookmark"><span><?php the_title(); ?></span></a></h3>
 					<p><?php the_author(); ?> | <em><?php echo get_post_meta(get_the_ID(), 'Publication', true); ?></em></p>
 					</div>
@@ -131,7 +147,15 @@
 			<div class="row">
 				<?php while($catquery->have_posts()) : $catquery->the_post(); ?>
 					<div class="col-md-4">
-					<?php echo get_the_post_thumbnail( $_post->ID, 'full', array( 'class' => 'img-fluid' )); ?>
+					<div class="thumb">
+				        <?php if ( get_the_post_thumbnail($_post->ID) != '' ) { ?>
+					        <a href="<?php the_permalink() ?>">
+								<?php echo get_the_post_thumbnail( $_post->ID, 'full', array( 'class' => 'img-fluid' )); ?>
+							</a>
+						 <?php } else { ?>
+				        	<a href="<?php the_permalink(); ?>"> <?php echo '<img src="' . catch_that_image() . '" class="img-fluid" />' ?> </a>
+				        <?php } ?>
+				    </div>
 					<h3><a href="<?php the_permalink() ?>" rel="bookmark"><span><?php the_title(); ?></span></a></h3>
 					<p><?php the_author(); ?> | <em><?php echo get_post_meta(get_the_ID(), 'Publication', true); ?></em></p>
 					</div>

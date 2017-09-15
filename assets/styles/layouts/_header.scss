@@ -20,16 +20,23 @@ header{
 				align-items:stretch;
 				@media screen and(max-width:768px){
 					align-items: flex-end;
+					position:relative;
+					z-index: 0;
+					min-height: 54px;
 				}
 				@media screen and(max-width:426px){
 					padding-right:0;
 				}
 				#bs4navbar{
+					-webkit-transition: 0.2s ease-in;
+					-moz-transition: 0.2s ease-in;
+					-o-transition: 0.2s ease-in;
+					transition: 0.2s ease-in;
 					@media screen and(max-width:991px){
 						display: none;
 					}
 				}
-				#menu-toggle{
+				#menu-toggle-close, #menu-toggle{
 					background-color:$third;
 					font-family: 'montserratregular';
 					color: #fff;
@@ -48,6 +55,33 @@ header{
 					@media screen and(max-width:375px){
 						width: 160px;
 					}
+				}
+				#menu-toggle{
+					display: none;
+					@media screen and(max-width:768px){
+						position:absolute;
+						z-index: 1;
+						right: 0;
+						top:14%;
+					}
+					@media screen and(max-width:426px){
+						display: block;
+					}	
+				}
+				#menu-toggle-close{
+					margin-right: 5px;
+					@media screen and(max-width:768px){
+						position:absolute;
+						z-index: 1;
+						top:14%;
+						left: 20%;
+					}
+					@media screen and(max-width:426px){
+						display: none;
+						width: 120px;
+						top:0;
+						left: -26px;
+					}					
 				}
 				#menu-main{
 					li{
@@ -149,7 +183,16 @@ header{
 				}
 			}
 		}
+		.container .col-md-2.search-hide{
+			display: none;
+			margin-top: 9px;
+		}
 	}
+}
+header .menu-bar .container .col-md-2{
+	@media screen and(max-width:426px){
+		justify-content: flex-start;
+	}	
 }
 .jumbotron{
 	position:relative;
@@ -252,7 +295,7 @@ header{
 						}
 					}
 				}
-				#menu-toggle{
+				#menu-toggle-close, #menu-toggle{
 					background-color:transparent;
 				}
 			}		
@@ -260,16 +303,8 @@ header{
 				display: flex;
 				height: 50px;
 				align-items: center;
-				img{
-					width: 35px;
-				}
-				span{
-					font-family: 'eb_garamond12_regular';
-					white-space: nowrap;
-		    		color: #fff;
-		    		padding-left: .5em;
-				    font-size: 1.1em;
-				    text-transform: uppercase;
+				@media screen and(max-width:426px){
+					margin-top:15px;
 				}
 			}
 		}

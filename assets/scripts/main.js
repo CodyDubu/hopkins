@@ -25,10 +25,23 @@
         $("#menu-toggle").click(function(e) {
             e.preventDefault();
             $("#wrapper").toggleClass("toggled");
+            $("#menu-toggle-close").fadeIn('fast');
+            $("#menu-toggle").fadeOut('slow');
+            $(".search-hide").fadeOut('slow');
+        });
+        $("#menu-toggle-close").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+            $("#menu-toggle-close").fadeOut('fast');
+            $("#menu-toggle").fadeIn('slow');
+            $(".search-hide").fadeIn('slow');
         });
         $(".close-btn").click(function(e) {
             e.preventDefault();
             $("#wrapper").toggleClass("toggled");
+            $("#menu-toggle-close").fadeOut('fast');
+            $("#menu-toggle").fadeIn('slow');
+            $(".search-hide").fadeIn('slow');
         });
         $(".inner-mobile-toggle").click(function(e) {
             e.preventDefault();

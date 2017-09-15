@@ -14,6 +14,7 @@
             <div class="row justify-content-end no-gutters">
               <div class="col-md-10 text-right">
                 <nav class="navbar navbar-toggleable-md navbar-light nav-primary text-right">
+                  <a href="#" id="menu-toggle-close"><i class="fa fa-window-close-o" aria-hidden="true"></i> Close Menu</a>
                   <div id="bs4navbar">
                   <?php
                   wp_nav_menu([
@@ -48,15 +49,15 @@
       <div class="row">
         <div class="col-xs-12 col-md-2">
           <a class="brand" href="<?= esc_url(home_url('/')); ?>">
-            <img src="<?php bloginfo('template_url'); ?>/assets/images/logo.png" class="img-fluid" alt="<?php bloginfo('name'); ?>" />
-            <span>Malone Center</span>
+            <img src="<?php bloginfo('template_url'); ?>/assets/images/logo_small_horizontal.png" class="img-fluid" alt="<?php bloginfo('name'); ?>" />
           </a>
         </div>
         <div class="col-xs-12 col-md-10">
-          <div class="container">
+          <div class="container" style="margin-right: 10px 0;">
             <div class="row justify-content-end no-gutters">
               <div class="col-md-12 text-right">
                 <nav class="navbar navbar-toggleable-md navbar-light nav-primary text-right">
+                  <a href="#" id="menu-toggle-close" class="fade-in"><i class="fa fa-window-close-o" aria-hidden="true"></i> Close Menu</a>
                   <div id="bs4navbar">
                   <?php
                   wp_nav_menu([
@@ -70,7 +71,7 @@
                   ]);
                   ?>
                   </div>
-                  <a href="#" id="menu-toggle">Menu <i class="fa fa-bars" aria-hidden="true"></i></a>
+                  <a href="#" id="menu-toggle" class="fade-in">Menu <i class="fa fa-bars" aria-hidden="true"></i></a>
                 </nav>
               </div>
             </div>

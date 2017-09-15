@@ -48,7 +48,7 @@ function catch_that_image() {
   $first_img = $matches[1][0];
 
   if(empty($first_img)) {
-    $first_img = "/righthome/wp-content/themes/righthome/assets/images/default.jpg";
+    $first_img = "/hopkins/wp-content/themes/hopkins/assets/images/default.jpg";
   }
   return $first_img;
 }
