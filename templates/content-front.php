@@ -7,10 +7,10 @@
 						<img src="<?php bloginfo('template_url'); ?>/assets/images/logo.png" class="img-fluid" alt="<?php bloginfo('name'); ?>" />
 					</div>
 					<div class="col-md-9">
-						<h3>Want more info?<br> Download our brochure...</h3>
+						<h3>Subscribe to our mailing list for the latest news and upcoming events....</h3>
 					</div>
 				</div>
-				<?php echo do_shortcode('[formidable id=5]'); ?>
+				<?php echo do_shortcode('[mc4wp_form id="11855"]'); ?>
 			</div>
 		</div>
 		<div class="col-md-5">

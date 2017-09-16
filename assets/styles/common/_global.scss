@@ -229,6 +229,14 @@ button, a{
 		text-decoration: none;
 	}
 }
+html{
+    min-height:100%;/* make sure it is at least as tall as the viewport */
+    position:relative;
+    z-index: 0;
+}
+body{
+    height:100%; /* force the BODY element to match the height of the HTML element */
+}
 a:focus,a:hover {
     text-decoration: none;
 }

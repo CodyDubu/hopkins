@@ -47,7 +47,7 @@ section.front-con{
 				    float: left;
 				    clear: none;
 				    margin-right: 0;
-				    input{
+				    input[type=email]{
 				    	background:transparent;
 				    	color: #fff;
 				    	font-family: 'open_sansregular';
@@ -62,7 +62,8 @@ section.front-con{
 				.frm_submit{
 					width: 40%;
 					clear: none;
-				    button{
+					float: left;
+				    input[type=submit]{
 				    	margin-top:0;
 				    	background-color:#84a1ae;
 				    	font-weight: bold;
@@ -73,7 +74,13 @@ section.front-con{
 				    	border:0;
 				    	border-radius:0;
 				    	box-shadow:none;
+				    	-webkit-transition: 0.2s ease-in;
+						-moz-transition: 0.2s ease-in;
+						-o-transition: 0.2s ease-in;
+						transition: 0.2s ease-in;
 				    	height: 55px;
+				    	width: 100%;
+				    	cursor: pointer;
 				    	@media screen and(max-width:426px){
 				    		font-size: 12px;
 				    	}
@@ -150,13 +157,13 @@ section.feeds{
 			left: 0px;
 			width: 100%;
 			margin:50px 0;
-			min-height: 300px;
+			min-height: 600px;
 			.col-md-4{
 				border-left:2px solid rgba(132,161,174,.8);
 				color: #fff;
 				min-height: 250px;
 				display: flex;
-				align-items:center;
+/* 				align-items:center; */
 				flex-wrap: wrap;
 				h3{
 					width: 100%;
@@ -232,7 +239,7 @@ section.apply-now{
 				}
 			}
 			.form-field{
-				width: 35%;
+				width: 23%;
 				@media screen and(max-width:426px){
 					width: 80%;
 					margin: 0 auto 10px;

@@ -14,7 +14,7 @@
             <div class="row justify-content-end no-gutters">
               <div class="col-md-10 text-right">
                 <nav class="navbar navbar-toggleable-md navbar-light nav-primary text-right">
-                  <a href="#" id="menu-toggle-close"><i class="fa fa-window-close-o" aria-hidden="true"></i> Close Menu</a>
+                  <!-- <a href="#" id="menu-toggle-close"><i class="fa fa-window-close-o" aria-hidden="true"></i> Close Menu</a> -->
                   <div id="bs4navbar">
                   <?php
                   wp_nav_menu([
@@ -57,7 +57,7 @@
             <div class="row justify-content-end no-gutters">
               <div class="col-md-12 text-right">
                 <nav class="navbar navbar-toggleable-md navbar-light nav-primary text-right">
-                  <a href="#" id="menu-toggle-close" class="fade-in"><i class="fa fa-window-close-o" aria-hidden="true"></i> Close Menu</a>
+                  <!-- <a href="#" id="menu-toggle-close" class="fade-in"><i class="fa fa-window-close-o" aria-hidden="true"></i> Close Menu</a> -->
                   <div id="bs4navbar">
                   <?php
                   wp_nav_menu([

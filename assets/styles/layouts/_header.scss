@@ -57,7 +57,6 @@ header{
 					}
 				}
 				#menu-toggle{
-					display: none;
 					@media screen and(max-width:768px){
 						position:absolute;
 						z-index: 1;
@@ -183,10 +182,6 @@ header{
 				}
 			}
 		}
-		.container .col-md-2.search-hide{
-			display: none;
-			margin-top: 9px;
-		}
 	}
 }
 header .menu-bar .container .col-md-2{
@@ -285,7 +280,7 @@ header .menu-bar .container .col-md-2{
 .page-content-wrapper-inner{
 	.menu-bar{
 		background-color:rgba(82, 72, 107, 0.83);	
-		padding-top:0;
+		padding:10px 0;
 		.container{
 			.navbar{
 				#menu-main{
@@ -334,7 +329,7 @@ header .menu-bar .container .col-md-2{
 			font-family: 'montserratregular';
 			text-transform: uppercase;
 			span{
-				background-color:#e05751;
+				background-color:#84a1ae;
 				padding: 6px;
 			    line-height: 52px;
 			    letter-spacing: 1px;

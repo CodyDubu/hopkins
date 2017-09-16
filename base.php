@@ -8,7 +8,7 @@ use Roots\Sage\Wrapper;
 <!doctype html>
 <html <?php language_attributes(); ?>>
   <?php get_template_part('templates/head'); ?>
-  <body <?php body_class('fade-all'); ?>>
+  <body <?php body_class(); ?>>
     <!--[if IE]>
       <div class="alert alert-warning">
         <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'sage'); ?>
@@ -17,7 +17,7 @@ use Roots\Sage\Wrapper;
     <div id="wrapper">
       <div id="sidebar-wrapper">
       <div class="container">
-      <button class="close-btn"><i class="fa fa-window-close-o" aria-hidden="true"></i></button>
+      <button class="close-btn"><i class="fa fa-window-close-o" aria-hidden="true"></i><span>Close Menu</span></button>
       <?php get_search_form(); ?>
          <?php
           wp_nav_menu([

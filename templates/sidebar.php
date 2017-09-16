@@ -7,7 +7,7 @@
 <div class="inner-contain">
 <?php dynamic_sidebar('sidebar-blog'); ?>
 </div>
-<?php }elseif(is_page(174) || is_page(188) || is_archive()){
+<?php }elseif(is_page(174) || is_page(188) || is_archive() || is_single()){
   wp_nav_menu([
    'menu'            => 'top',
    'theme_location'  => 'news_navigation',
