@@ -60,11 +60,6 @@ use Roots\Sage\Wrapper;
           <?php }else{ ?>
           <div class="content">
           <?php }?>
-            <?php if (Setup\display_sidebar()) : ?>
-              <aside class="sidebar">
-                <?php include Wrapper\sidebar_path(); ?>
-              </aside><!-- /.sidebar -->
-            <?php endif; ?>
             <main class="main">
               <?php include Wrapper\template_path(); ?>
             </main><!-- /.main -->
@@ -79,3 +74,4 @@ use Roots\Sage\Wrapper;
       </div>
   </body>
 </html>
+<link rel="stylesheet" type="text/css" href="/wp-content/themes/hopkins/safari-fix.css" />

@@ -1,14 +1,23 @@
 <?php function is_tribe_calendar() { } // detect if we're on an Events Calendar page ?>
-<?php if(is_home()){
-	dynamic_sidebar('sidebar-blog');
+<?php if(is_home()){ ?>
+<div class="page-header-mobile">
+  <a href="#" class="inner-mobile-toggle">Close Menu</a>
+</div>
+	<?php dynamic_sidebar('sidebar-blog');
 }elseif(is_page(7)){
 
 }elseif(tribe_is_event() || tribe_is_event_category() || tribe_is_in_main_loop() || tribe_is_view() || 'tribe_events' == get_post_type() || is_singular( 'tribe_events' )) { ?>
 <div class="inner-contain">
+<div class="page-header-mobile">
+  <a href="#" class="inner-mobile-toggle">Close Menu</a>
+</div>
 <?php dynamic_sidebar('sidebar-blog'); ?>
 </div>
-<?php }elseif(is_page(174) || is_page(188) || is_archive() || is_single()){
-  wp_nav_menu([
+<?php }elseif(is_page(174) || is_page(188) || is_archive() || is_single()){ ?>
+<div class="page-header-mobile">
+  <a href="#" class="inner-mobile-toggle">Close Menu</a>
+</div>
+  <?php wp_nav_menu([
    'menu'            => 'top',
    'theme_location'  => 'news_navigation',
    'menu_id'         => false,
@@ -18,6 +27,9 @@
    'walker'          => new bs4navwalker()
   ]);      
 }else{ ?>
+<div class="page-header-mobile">
+  <a href="#" class="inner-mobile-toggle">Close Menu</a>
+</div>
 <h3>
 <?php 	
 $current = $post->ID;
@@ -50,6 +62,9 @@ if ($root_parent = get_the_title($grandparent) !== $root_parent = get_the_title(
     } 
 } ?>
 <?php if(is_page(7)){ ?>
+<div class="page-header-mobile">
+  <a href="#" class="inner-mobile-toggle">Close Menu</a>
+</div>
 <h3>Contact</h3>
 <div class="email-wrap contact-email">
 	<div class="broch container">

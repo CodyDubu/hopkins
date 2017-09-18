@@ -17,7 +17,7 @@ use Roots\Sage\Wrapper;
     <div id="wrapper">
       <div id="sidebar-wrapper">
       <div class="container">
-      <button class="close-btn"><i class="fa fa-window-close-o" aria-hidden="true"></i><span>Close Menu</span></button>
+      <button class="close-btn"><i class="fa fa-window-close-o" aria-hidden="true"></i></button>
       <?php get_search_form(); ?>
          <?php
           wp_nav_menu([

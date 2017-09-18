@@ -22,7 +22,7 @@ if ( date( 'dmY', $from ) !== date( 'dmY', $to ) ) {
     <div class="meetup-cover-wrap">
         <div class="meetup-cover">
             <?php if ( has_post_thumbnail() ) {
-                the_post_thumbnail( 'full' );
+                the_post_thumbnail( 'full', ['class' => 'img-fluid', 'title' => 'Feature image'] );
             } ?>
         </div>
 

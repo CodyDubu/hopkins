@@ -287,16 +287,16 @@ section.apply-now{
 	    -moz-transition: all 0.5s ease;
 	    -o-transition: all 0.5s ease;
 	    transition: all 0.5s ease;
-		-webkit-box-flex: 0;
-	    -ms-flex: 0 0 100%;
-	    flex: 0 0 100%;
-	    max-width: 100%;
-}
-.sidebar-side .main.main-shrink{
 	    -webkit-box-flex: 0;
 	    -ms-flex: 0 0 66.6666666667%;
 	    flex: 0 0 66.6666666667%;
 	    max-width: 66.6666666667%;
+}
+.single-meetup .sidebar-side .main, .sidebar-side .main.main-shrink{
+		-webkit-box-flex: 0;
+	    -ms-flex: 0 0 100%;
+	    flex: 0 0 100%;
+	    max-width: 100%;
 }
 .featured-blog-wrap{
 	align-items:center;

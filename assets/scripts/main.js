@@ -30,10 +30,17 @@
             e.preventDefault();
             $("#wrapper").toggleClass("toggled");
         });
-        $(".inner-mobile-toggle").click(function(e) {
+        $(".inner-contain .inner-mobile-toggle").click(function(e) {
             e.preventDefault();
             $("main.main").toggleClass("main-shrink");
             $("aside.sidebar").toggleClass("side-toggle");
+            $(".inner-contain .page-header-mobile").fadeOut();
+        });
+        $(".sidebar .inner-mobile-toggle").click(function(e) {
+            e.preventDefault();
+            $("main.main").toggleClass("main-shrink");
+            $("aside.sidebar").toggleClass("side-toggle");
+            $(".inner-contain .page-header-mobile").fadeIn();
         });
          $('.contentt').hide();
          $('a.read').click(function (e) {

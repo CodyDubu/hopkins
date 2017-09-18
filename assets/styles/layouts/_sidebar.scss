@@ -13,7 +13,7 @@
 	    right: 250px;
 	    width: 250px;
 	    height: 100%;
-	    margin-right: -250px;
+	    margin-right: -500px;
 	    overflow-y: auto;
 	    background: $third;
 	    -webkit-transition: all 0.5s ease;
@@ -149,7 +149,7 @@
 		    -moz-transition: all 0.5s ease;
 		    -o-transition: all 0.5s ease;
 		    transition: all 0.5s ease;
-		    margin-left: -33.3333333333%;
+		    margin-left: 0;
 		    @media screen and(max-width:426px){
 		    	padding-left:10px;
 		    }
@@ -363,7 +363,7 @@
 }
 #wrapper.toggled {
 	#sidebar-wrapper {
-	    margin-right: -500px;
+	    margin-right: -250px;
 		@media screen and(max-width:426px){
 			margin-right: -250px;
 		}	
@@ -373,6 +373,10 @@
 	}
 }
 #wrapper #page-content-wrapper aside.sidebar.side-toggle{
+	margin-left:-33.3333333333%;
+	margin-right:0;
+}
+.single-meetup #wrapper #page-content-wrapper aside.sidebar{
 	margin-left:0;
 	margin-right:0;
 }

@@ -338,8 +338,25 @@ h2.block-back{
 section.container {
     width: 100%;
 }
-
+.page-header-mobile{
+    .inner-mobile-toggle{
+        background-color: $third;
+        font-family: montserratregular;
+        color: #fff;
+        font-size: 13px;
+        padding: .8em 1em;
+        white-space: nowrap;
+        text-transform: uppercase;
+        margin-top: -17px;
+        display: block;
+        margin-bottom: 20px;
+        text-decoration: none;
+    }
+}
 .inner-contain{
+    .page-header-mobile{
+        display: none;
+    }
     .container-fluid{
         padding:0;
     }
@@ -402,21 +419,6 @@ section.container {
             font-weight: bold;
             line-height: 14px;
             background-color:#f4f4f4;
-        }
-    }
-    .page-header-mobile{
-        .inner-mobile-toggle{
-            background-color: $third;
-            font-family: montserratregular;
-            color: #fff;
-            font-size: 13px;
-            padding: .8em 1em;
-            white-space: nowrap;
-            text-transform: uppercase;
-            margin-top: -17px;
-            display: block;
-            margin-bottom: 20px;
-            text-decoration: none;
         }
     }
     .row.row-projects{
