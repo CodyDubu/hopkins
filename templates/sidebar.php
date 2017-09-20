@@ -70,7 +70,7 @@ if ($root_parent = get_the_title($grandparent) !== $root_parent = get_the_title(
 	<div class="broch container">
 	<a href="tel:410-516-5117"><i class="fa fa-mobile" aria-hidden="true"></i> 410-516-5117</a>
 	<a href="mailto:malonecenter@jhu.edu"><i class="fa fa-envelope" aria-hidden="true"></i> malonecenter@jhu.edu</a>
-	<a style="border-bottom:0;align-items: flex-start;" href="http://maps.google.com/maps"><i class="fa fa-map-marker" aria-hidden="true"></i> <address>3400 North Charles Street<br>Baltimore, MD 21218-2608</address></a>
+	 <a style="border-bottom:0;align-items: flex-start;" href="https://www.google.com/maps/search/3400+North+Charles+Street+Baltimore,+MD+21218-2608/@39.32835,-76.6226535,17z/data=!3m1!4b1" target="_blank" rel="noopener noreferrer"><i class="fa fa-map-marker" aria-hidden="true"></i> <address>3400 North Charles Street<br>Baltimore, MD 21218-2608</address></a>
 	<?php echo FrmFormsController::get_form_shortcode( array( 'id' => 8, 'title' => false, 'description' => false ) ); ?>
 	</div>
 </div>

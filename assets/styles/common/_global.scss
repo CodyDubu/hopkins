@@ -481,3 +481,9 @@ section.container {
         }
     }
 }
+.transitions{
+    -webkit-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+}

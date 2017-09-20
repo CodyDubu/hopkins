@@ -408,6 +408,13 @@ section.apply-now{
 			display: flex;
 		    width: 100%;
 		    flex-wrap: wrap;
+		    -webkit-transition: 0.2s ease-in;
+			-moz-transition: 0.2s ease-in;
+			-o-transition: 0.2s ease-in;
+			transition: 0.2s ease-in;
+		    &:hover{
+		    	width: 130%;
+		    }
 			&:hover .caption{
 				opacity: 1;
 			}
@@ -515,11 +522,8 @@ section.apply-now{
 						}
 					}
 					p{
-						font-size: 13px;
+						font-size: 12px;
 						line-height: 1.3em;
-						@media screen and(min-width:1023px){
-							font-size: 100%;
-						}
 					}
 					span.read-more-blur{
 						background-color: rgba(42,39,70,.8);
@@ -679,6 +683,11 @@ section.apply-now{
 		flex: 0 0 100%;
 		max-width: 100%;
 		margin:0;
+	}
+	.caption-style-1 li{
+		&:hover{
+			width: 100%;
+		}
 	}
 }
 section.feeds .tab-content .tab-pane .col-md-4 {
